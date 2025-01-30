@@ -1,0 +1,49 @@
+.node {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.node-start {
+  background-color: green;
+}
+
+.node-finish {
+  background-color: red;
+}
+.node-visited {
+  animation-name: visitedAnimation;
+  animation-duration: 0.1s;
+
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes visitedAnimation {
+  100% {
+    transform: scale(1);
+    background-color: rgba(216, 196, 19, 0.75);
+  }
+}
+
+.node-wall {
+  background-color: rgb(0, 0, 0);
+}
+
+.node-shortest-path {
+  animation-name: shortestPath;
+  animation-duration: 0.2s;
+
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes shortestPath {
+
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(6, 91, 131);
+  }
+}
